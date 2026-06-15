@@ -6,6 +6,7 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
+import com.example.taller3_00543924.data.database.entities.QuestionEntity
 import com.example.taller3_00543924.data.database.entities.QuestionWithOptions
 import kotlinx.coroutines.flow.Flow
 
