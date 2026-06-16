@@ -1,4 +1,4 @@
-package com.example.taller3_00543924.screens
+package com.example.taller3_00543924.ui.questions
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -16,7 +16,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.taller3_00543924.data.model.Question
+import com.example.taller3_00543924.screens.questions.QuestionsViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -48,7 +48,6 @@ fun QuestionsScreen(
                 .padding(horizontal = 16.dp)
         ) {
             if (questions.isEmpty()) {
-                // Estado vacío cuando no hay registros en Room
                 Column(
                     modifier = Modifier.fillMaxSize(),
                     verticalArrangement = Arrangement.Center,
@@ -98,7 +97,6 @@ fun QuestionsScreen(
         }
     }
 
-    // Bottom Sheet para añadir una nueva pregunta
     if (showBottomSheet) {
         var title by rememberSaveable { mutableStateOf("") }
 

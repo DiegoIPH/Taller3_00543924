@@ -1,4 +1,4 @@
-package com.example.taller3_00543924.screens
+package com.example.taller3_00543924.screens.options
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
